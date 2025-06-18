@@ -4,192 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GlowUp Beauty Store</title>
-  <style>
-    /* Reset and global styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fff0f5;
-      color: #333;
-      text-align: center;
-    }
-
-    /* Header */
-    header {
-      background-color: #ff69b4;
-      color: white;
-      padding: 20px 0;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a.active,
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Hero Section */
-    .hero {
-      padding: 50px 20px;
-      background-color: #ffe4e1;
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-
-    .hero .btn {
-      background-color: #ff69b4;
-      color: white;
-      padding: 10px 25px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    /* Featured Products */
-    .featured-products {
-      padding: 40px 20px;
-    }
-
-    .featured-products h2 {
-      font-size: 2rem;
-      margin-bottom: 30px;
-    }
-
-    .product-grid {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-
-    .product-card {
-      background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      width: 250px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .product-card img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    .product-card h3 {
-      margin: 15px 0 5px;
-    }
-
-    .product-card p {
-      color: #ff69b4;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .btn-small {
-      padding: 7px 20px;
-      background-color: #ff69b4;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 0.9rem;
-      display: inline-block;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #f8c8dc;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
-    footer a {
-      color: #ff1493;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>GlowUp Beauty Store</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="cart.html">Cart</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>GlowUp Beauty Store</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>Glow Like Never Before 💫</h2>
-    <p>Best beauty & skincare products at amazing prices</p>
-    <a href="products.html" class="btn">Shop Now</a>
-  </section>
+  <main class="container">
+    <section class="hero">
+      <h2>Glow Like Never Before 💫</h2>
+      <p>Best beauty & skincare products at amazing prices</p>
+      <a href="products.html" class="btn">Shop Now</a>
+    </section>
 
-  <section class="featured-products">
-    <h2>Featured Products</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://swissbeauty.in/cdn/shop/files/SB-302_12C_1080x.jpg?v=1748634914" alt="Lipstick" />
-        <h3>Matte Lipstick</h3>
-        <p>₹399</p>
-        <a href="product-details.html" class="btn-small">View</a>
-      </div>
+    <section class="featured-products">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
 
-      <div class="product-card">
-        <img src="https://artdeco.com/cdn/shop/collections/Kategoriebanner-Pflege-Gesichtspflege_600x400_unlimited.jpg?v=1686058170&width=1024" alt="Face Cream" />
-        <h3>Glow Face Cream</h3>
-        <p>₹599</p>
-        <a href="product-details.html" class="btn-small">View</a>
-      </div>
+        <div class="product-card">
+          <img src="https://swissbeauty.in/cdn/shop/files/SB-302_12C_1080x.jpg?v=1748634914" alt="Lipstick" />
+          <h3>Matte Lipstick</h3>
+          <p>₹399</p>
+          <a href="product-details.html" class="btn-small">View</a>
+        </div>
 
-      <div class="product-card">
-        <img src="https://wwd.com/wp-content/uploads/2022/02/best-rose-perfume-nest-fragrance.jpg" alt="Rose Perfume" />
-        <h3>Rose Perfume</h3>
-        <p>₹799</p>
-        <a href="product-details.html" class="btn-small">View</a>
+        <div class="product-card">
+          <img src="https://artdeco.com/cdn/shop/collections/Kategoriebanner-Pflege-Gesichtspflege_600x400_unlimited.jpg?v=1686058170&width=1024" alt="Face Cream" />
+          <h3>Glow Face Cream</h3>
+          <p>₹599</p>
+          <a href="product-details.html" class="btn-small">View</a>
+        </div>
+
+        <div class="product-card">
+          <img src="https://wwd.com/wp-content/uploads/2022/02/best-rose-perfume-nest-fragrance.jpg" alt="Rose Perfume" />
+          <h3>Rose Perfume</h3>
+          <p>₹799</p>
+          <a href="product-details.html" class="btn-small">View</a>
+        </div>
+
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 GlowUp Beauty Store | Follow us on 
-      <a href="#">Instagram</a>, 
-      <a href="#">Facebook</a>
-    </p>
+    <div class="container">
+      <p>&copy; 2025 GlowUp Beauty Store | Follow us on 
+        <a href="#">Instagram</a>, 
+        <a href="#">Facebook</a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
